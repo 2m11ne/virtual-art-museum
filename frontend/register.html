@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Musée d'Art</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <h1>📝 Inscription</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="gallery.html">Galerie</a>
+            <a href="login.html">Connexion</a>
+            <a href="register.html">Inscription</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <h2>Créez votre compte</h2>
+
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur :</label>
+                    <input type="text" id="username" name="username" required
+                           placeholder="Votre nom d'utilisateur">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" required
+                           placeholder="votre@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe :</label>
+                    <input type="password" id="password" name="password" required
+                           placeholder="Votre mot de passe">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmer le mot de passe :</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required
+                           placeholder="Confirmez votre mot de passe">
+                </div>
+
+                <button type="submit" class="btn-submit">S'inscrire</button>
+
+                <p class="auth-link">
+                    Déjà un compte ?
+                    <a href="login.html">Connectez-vous ici</a>
+                </p>
+
+                <div id="register-message" class="message"></div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Musée d'Art Virtuel &copy; 2023 - Projet Git Collaboratif</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
